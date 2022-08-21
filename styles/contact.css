@@ -2,10 +2,15 @@
 * {
 	box-sizing: border-box;
 }
-.form-div .btn{
+.form-div{
     display: flex;
     justify-content: center;
 }
 .form{
     width:520px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;    
 }
