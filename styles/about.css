@@ -1,3 +1,7 @@
 .choice-div{
     width: 100%;
 }
+.choice{
+    display: flex;
+    justify-content: center;
+}
