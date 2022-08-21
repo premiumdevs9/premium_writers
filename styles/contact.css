@@ -36,7 +36,7 @@ section{
 }
 
 .floating-btn:hover {
-	background-color: #ffffff;
+	background-color: #03153B;
 	color: #001F61;
 }
 
@@ -61,4 +61,10 @@ section{
 .floating-text a {
 	color: #FF7500;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+	.floating-btn {
+		right: 10px;
+	}
 }
