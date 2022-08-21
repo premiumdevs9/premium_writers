@@ -3,10 +3,10 @@
 	box-sizing: border-box;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 720px) {
 
 	.form{
-		width:720px;
+		width:520px;
         margin-left: 28%;
 	}
 	
