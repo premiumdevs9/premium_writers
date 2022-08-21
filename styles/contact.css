@@ -2,15 +2,6 @@
 * {
 	box-sizing: border-box;
 }
-
-@media screen and (min-width: 720px) {
-
-	.form{
-		width:520px;
-        margin-left: 28%;
-	}
-	
-	.floating-btn {
-		right: 10px;
-	}
+.form{
+    display: flex;
 }
