@@ -1,12 +1,3 @@
-.testbg{
-    background-image: url(/images/testbg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-
 /* carousel */
 #quote-carousel 
 {
