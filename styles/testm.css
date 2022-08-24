@@ -58,3 +58,7 @@ blockquote{
   .testsec{
     background-color: antiquewhite;
   }
+
+  .review-div{
+    width: 50%;
+  }
