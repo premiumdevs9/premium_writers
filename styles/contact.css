@@ -10,10 +10,6 @@
     width:520px;
 }
 
-.btn{
-    display: flex;
-    justify-content: center;    
-}
 section{
     background-color: grey;
 }
