@@ -67,3 +67,8 @@ blockquote{
 .testsec1{
     background-color: lightsteelblue;
 }
+
+footer{
+    width: 100%;
+    height: 100%;
+}
