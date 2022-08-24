@@ -11,6 +11,7 @@ body{
 }
 
 section{
+    margin: 10px;
     opacity: 5;
 }
 
@@ -28,7 +29,6 @@ section{
 
 
 footer{
-    position: ;
     bottom: 0;
     left: 0;
     right: 0;
