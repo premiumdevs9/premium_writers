@@ -1,5 +1,6 @@
 blockquote{
-    border-left:none
+    border-left:none;
+    background-color: antiquewhite;
 }
 
 .quote-badge{
