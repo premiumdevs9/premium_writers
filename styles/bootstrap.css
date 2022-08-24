@@ -21,6 +21,68 @@ body{
         width: 50%;
     }
 }
- footer{
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(7,11,38,0.77);
+    height: 150px;
+}
+
+footer img{
+    width: 25px;
+    margin-top: 5%;
+}
+
+.footer-contacts{
     width: 100%;
- }
+    display: flex;
+}
+.footer-cont{
+
+    display: flex;
+    border-right: 1px solid #6a1a21;
+    flex-direction: column;
+    margin-top: 1%;
+}
+.footer-desc{
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 5%;
+}
+.footer-desc ul{
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.copyright{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.copyright p{
+    text-align: center;
+    color: lightyellow;
+}
+
+
+.span-l{
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.bodder{
+    height: 100%;
+    border: 1px solid yellow;
+}
+.position-fixed{
+    position: fixed;
+}
+
+.height-100vw{
+    height: 100vh;
+}
+
