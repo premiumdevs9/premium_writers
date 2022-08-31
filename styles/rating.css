@@ -15,9 +15,8 @@
 }
 .star.half:after {
     content:'\2605';
-    color: gold;
+    color: orange;
     position: absolute;
-    margin-left: -20px;
-    width: 10px;
+   
     overflow: hidden;
 }
