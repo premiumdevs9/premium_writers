@@ -1,50 +1,23 @@
-%full-star {
-    &:after {
-      content: "\f005";
-    }
-  };
-  
-  %half-star {
-    &:after {
-      content: "\f123";
-    }
-  };
-  
-  .rating {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: orange;
-    $this: &;
-  
-    &__item {
-      font-size: 24px;
-      display: block;
-      font-family: FontAwesome;
-      
-      &::after {
-        content: '\f006 ';
-      }
-    }
-  
-    @for $i from 0 to 6 {
-      &[data-rating='#{$i}'] {
-        #{$this}__item:nth-child(-n + #{$i}) {
-          @extend %full-star;
-        }
-      }
-  
-      &[data-rating='#{$i + 0.5}'] {
-        #{$this}__item:nth-child(-n + #{$i}) {
-          @extend %full-star;
-        }
-  
-        #{$this}__item:nth-child(#{$i + 1}) {
-          @extend %half-star;
-        }
-      }
-    }
-  }
-  
+.star {
+    font-size: x-large;
+    width: 50px;
+    display: inline-block;
+    color: gray;
+}
+.star:last-child {
+    margin-right: 0;
+}
+.star:before {
+    content:'\2605';
+}
+.star.on {
+    color: gold;
+}
+.star.half:after {
+    content:'\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -20px;
+    width: 10px;
+    overflow: hidden;
+}
