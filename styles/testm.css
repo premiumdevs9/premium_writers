@@ -38,7 +38,7 @@ blockquote{
 }
 
 
-.checked {
+.checked, .half-checked {
     color: orange;
   }
 
