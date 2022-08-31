@@ -1870,6 +1870,7 @@ section {
 
 
 .carousel-control-next,
-.carousel-control-prev, .carousel-indicators {
+.carousel-control-prev,
+.carousel-indicators {
     filter: invert(100%);
 }
