@@ -1864,3 +1864,12 @@ section {
     padding-top: 4px;
   }
 }
+
+
+
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
