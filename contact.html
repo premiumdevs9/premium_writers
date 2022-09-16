@@ -91,11 +91,12 @@
 
 <section class="justify-content-center">
     <div class="container form-div">
-        <form  method="POST" 
-               action="https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec"
-               class="row  mt-5 mb-5  text-dark form g-3 p-5" 
-               style="background-color: mintcream;"
-               >
+        <form   id="form"
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec"
+                class="row  mt-5 mb-5  text-dark form g-3 p-5" 
+                style="background-color: mintcream;"
+                >
             <h1 class="center text-center">Leave Your Request</h1>
             <div class="col-12">
                 <label for="inputEmail4" class="form-label">Email</label>
@@ -297,23 +298,21 @@
 
 
 <script>
-  function redirectOnSubmit (){
-    window.addEventListener("load", function() {
-      const form = document.getElementById('form');
-      form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        const data = new FormData(form);
-        const action = e.target.action;
-        fetch(action, {
-          method: 'POST',
-          body: data,
-        })
-        .then(() => {
-          alert("Success!");
-        })
+      window.addEventListener("load", function() {
+        const form = document.getElementById('form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Success!");
+          })
+        });
       });
-    });
-  }
 
 </script>
 
