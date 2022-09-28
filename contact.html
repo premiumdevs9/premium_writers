@@ -89,7 +89,7 @@
 
 <!-- End of Nav bar -->
 
-<!--  itemid="Form"
+<!--            itemid="Form"
                 action="https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec"
                 method="POST"
                 id="form-ID" class="row  mt-5 mb-5  text-dark form g-3 p-5" 
@@ -100,8 +100,14 @@
 
 <section class="justify-content-center">
     <div class="container form-div">
-        <form name="google_sheet">
-          <div id="form_alerts"></div>
+        <form   name="google_sheet"
+                temid="Form"
+                action="https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec"
+                method="POST"
+                id="form-ID" class="row  mt-5 mb-5  text-dark form g-3 p-5" 
+                style="background-color: mintcream;
+                >
+            <div id="form_alerts"></div>
             <h1 class="center text-center">Leave Your Request</h1>
             <div class="col-12">
                 <label for="inputEmail4" class="form-label">Email</label>
@@ -322,23 +328,6 @@
 </script>
 -->
 
-
-
-<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec'
-  const form = document.forms['google_sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => $('#form_alerts').html("<div class = 'alert alert-success'>Order request sent successfully</div>"))
-      .catch(error => $('#form_alerts').html("<div class = 'alert alert-danger'>Order request not senty</div>"))
-  })
-</script>
 
 </body>
 </html>
