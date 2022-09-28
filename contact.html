@@ -102,8 +102,6 @@
     <div class="container form-div">
         <form   name="google_sheet"
                 temid="Form"
-
-                method="POST"
                 id="form-ID" class="row  mt-5 mb-5  text-dark form g-3 p-5" 
                 style="background-color: mintcream;"
                 >
@@ -329,9 +327,6 @@
 -->
 
 
-<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
@@ -339,8 +334,8 @@
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec'
-  const form = document.forms['form-ID']
-
+  const form = document.forms['google-sheet']
+  
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
