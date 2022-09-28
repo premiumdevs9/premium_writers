@@ -328,14 +328,14 @@
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 <script>
-  const scriptURL = '<SCRIPT https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec'
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
+      .then(response => $('#form_alarts').html("<div class = 'alert alert-success'>Order request sent successfully</div>"))
+      .catch(error => $('#form_alarts').html("<div class = 'alert alert-danger'>Order request not senty</div>"))
   })
 </script>
 
