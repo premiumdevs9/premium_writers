@@ -100,7 +100,7 @@
 
 <section class="justify-content-center">
     <div class="container form-div">
-        <form name="submit-to-google-sheet">
+        <form name="google_sheet">
           <div id="form_alerts"></div>
             <h1 class="center text-center">Leave Your Request</h1>
             <div class="col-12">
@@ -329,8 +329,8 @@
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhtY6HqmA3rsuSlaNAHv3W5rujA4Ua0s2fH5XS7_N75ATqObFd4p5uXJxc-Ayp_Eht/exec'
-  const form = document.forms['submit-to-google-sheet']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzFt6EHX1bTMTRWjRGIVHjIhwFbenobt2nXXCAg2oSzQq-ifVgt6H0cbK_PLmpfVW0/exec'
+  const form = document.forms['google_sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
