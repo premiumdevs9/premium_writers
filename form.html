@@ -61,8 +61,8 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => $("form_alerts").html("div class='alert alert-success'>Order request sent successfully! Wait for email notification for further intruction from support.</div>"))
-        .catch(error => $("form_alerts").html("div class='alert alert-danger'>Order request not sent!</div>"))
+        .then(response => $("#form_alerts").html("div class='alert alert-success'>Order request sent successfully! Wait for email notification for further intruction from support.</div>"))
+        .catch(error => $("#form_alerts").html("div class='alert alert-danger'>Order request not sent!</div>"))
     })
   </script>
 
